@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  nav { display: none; }
+  .no-print { display: none; }
+  * { color: black !important; background: white !important; }
+  section { page-break-inside: avoid; }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
