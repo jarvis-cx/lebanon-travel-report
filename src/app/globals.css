@@ -2,18 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-@media print {
-  nav { display: none; }
-  .no-print { display: none; }
-  * { color: black !important; background: white !important; }
-  section { page-break-inside: avoid; }
-}
-
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-gray-50 text-gray-900;
+    @apply bg-slate-100 text-slate-900;
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Section card base */
+.section-card {
+  @apply bg-white rounded-2xl shadow-sm border border-slate-100 p-8 mb-6;
+}
+
+/* Section heading with left border accent */
+.section-heading {
+  @apply flex items-center gap-3 mb-6;
+}
+.section-heading h2 {
+  @apply text-2xl font-bold text-slate-900;
+}
+
+@media print {
+  nav, .no-print { display: none !important; }
+  body { background: white !important; }
+  .section-card { box-shadow: none !important; border: 1px solid #e2e8f0 !important; break-inside: avoid; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }

@@ -1,8 +1,12 @@
 export default function GovernmentAdvisories() {
   return (
-    <section id="advisories" className="py-10 border-b border-gray-200">
-      <h2 className="text-3xl font-bold mb-6">Government Advisories</h2>
-      <p className="text-sm text-gray-500 mb-6">As of 10 March 2026. All links open official government sources.</p>
+    <section id="advisories" className="section-card">
+      <div className="flex items-center gap-3 mb-2">
+        <div className="w-1 h-8 rounded-full bg-amber-500" />
+        <span className="text-2xl">🏛️</span>
+        <h2 className="text-2xl font-bold text-slate-900">Government Advisories</h2>
+      </div>
+      <p className="text-slate-500 text-sm mb-6 pl-10">As of 10 March 2026. All links open official government sources.</p>
 
       <div className="space-y-6">
         {/* Australia */}

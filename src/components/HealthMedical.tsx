@@ -1,9 +1,12 @@
 export default function HealthMedical() {
   return (
-    <section id="health" className="py-10 border-b border-gray-200">
-      <h2 className="text-3xl font-bold mb-6">Health &amp; Medical</h2>
-
-      {/* Insurance warning */}
+    <section id="health" className="section-card">
+      <div className="flex items-center gap-3 mb-2">
+        <div className="w-1 h-8 rounded-full bg-green-500" />
+        <span className="text-2xl">🏥</span>
+        <h2 className="text-2xl font-bold text-slate-900">Health &amp; Medical</h2>
+      </div>
+      <p className="text-slate-500 text-sm mb-6 pl-10">Health infrastructure and medical considerations.</p>{/* Insurance warning */}
       <div className="border-2 border-red-500 bg-red-50 rounded-xl p-5 mb-6">
         <h3 className="font-bold text-red-800 mb-2">⚠️ Travel Insurance — Critical Note</h3>
         <p className="text-sm text-red-700">

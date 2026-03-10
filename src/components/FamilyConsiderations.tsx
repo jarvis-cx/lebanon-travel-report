@@ -1,8 +1,12 @@
 export default function FamilyConsiderations() {
   return (
-    <section id="family" className="py-10 border-b border-gray-200">
-      <h2 className="text-3xl font-bold mb-2">Family Considerations</h2>
-      <p className="text-gray-600 mb-6">Specific guidance for 2 adults + children ages 7 and 9.</p>
+    <section id="family" className="section-card">
+      <div className="flex items-center gap-3 mb-2">
+        <div className="w-1 h-8 rounded-full bg-purple-500" />
+        <span className="text-2xl">👨‍👩‍👧‍👦</span>
+        <h2 className="text-2xl font-bold text-slate-900">Family Considerations</h2>
+      </div>
+      <p className="text-slate-500 text-sm mb-6 pl-10">Specific guidance for 2 adults + children ages 7 and 9.</p>
 
       {/* Attractions by area */}
       <h3 className="text-xl font-semibold mb-4">🎡 Child-Friendly Attractions</h3>

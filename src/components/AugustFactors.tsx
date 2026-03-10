@@ -1,9 +1,12 @@
 export default function AugustFactors() {
   return (
-    <section id="august" className="py-10 border-b border-gray-200">
-      <h2 className="text-3xl font-bold mb-6">August-Specific Factors</h2>
-
-      <div className="grid md:grid-cols-2 gap-6 mb-6">
+    <section id="august" className="section-card">
+      <div className="flex items-center gap-3 mb-2">
+        <div className="w-1 h-8 rounded-full bg-amber-500" />
+        <span className="text-2xl">☀️</span>
+        <h2 className="text-2xl font-bold text-slate-900">August-Specific Factors</h2>
+      </div>
+      <p className="text-slate-500 text-sm mb-6 pl-10">Seasonal factors specific to an August 2026 visit.</p><div className="grid md:grid-cols-2 gap-6 mb-6">
         {/* Weather */}
         <div className="bg-orange-50 border border-orange-200 rounded-xl p-5">
           <h3 className="font-bold text-orange-800 text-lg mb-3">☀️ August Weather</h3>

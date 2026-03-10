@@ -1,9 +1,12 @@
 export default function MoneyEconomy() {
   return (
-    <section id="money" className="py-10 border-b border-gray-200">
-      <h2 className="text-3xl font-bold mb-6">Money &amp; Economy</h2>
-
-      {/* Currency situation */}
+    <section id="money" className="section-card">
+      <div className="flex items-center gap-3 mb-2">
+        <div className="w-1 h-8 rounded-full bg-green-500" />
+        <span className="text-2xl">💵</span>
+        <h2 className="text-2xl font-bold text-slate-900">Money &amp; Economy</h2>
+      </div>
+      <p className="text-slate-500 text-sm mb-6 pl-10">Currency, banking, and economic conditions.</p>{/* Currency situation */}
       <div className="bg-white border border-gray-200 rounded-xl p-5 mb-6">
         <h3 className="font-bold text-lg mb-3">💱 Currency Situation (March 2026)</h3>
         <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-700">

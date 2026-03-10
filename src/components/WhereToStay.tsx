@@ -1,9 +1,12 @@
 export default function WhereToStay() {
   return (
-    <section id="accommodation" className="py-10 border-b border-gray-200">
-      <h2 className="text-3xl font-bold mb-6">Where to Stay</h2>
-
-      <div className="grid md:grid-cols-2 gap-5 mb-6">
+    <section id="accommodation" className="section-card">
+      <div className="flex items-center gap-3 mb-2">
+        <div className="w-1 h-8 rounded-full bg-blue-500" />
+        <span className="text-2xl">🏨</span>
+        <h2 className="text-2xl font-bold text-slate-900">Where to Stay</h2>
+      </div>
+      <p className="text-slate-500 text-sm mb-6 pl-10">Accommodation options in Northern Lebanon.</p><div className="grid md:grid-cols-2 gap-5 mb-6">
         {/* Jounieh */}
         <div className="bg-white border border-gray-200 rounded-xl p-5">
           <div className="flex items-center gap-2 mb-3">

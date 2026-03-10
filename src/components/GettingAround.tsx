@@ -1,9 +1,12 @@
 export default function GettingAround() {
   return (
-    <section id="getting-around" className="py-10 border-b border-gray-200">
-      <h2 className="text-3xl font-bold mb-6">Getting Around</h2>
-
-      {/* Distance table */}
+    <section id="getting-around" className="section-card">
+      <div className="flex items-center gap-3 mb-2">
+        <div className="w-1 h-8 rounded-full bg-amber-500" />
+        <span className="text-2xl">🚗</span>
+        <h2 className="text-2xl font-bold text-slate-900">Getting Around</h2>
+      </div>
+      <p className="text-slate-500 text-sm mb-6 pl-10">Transport options within Lebanon.</p>{/* Distance table */}
       <div className="bg-white border border-gray-200 rounded-xl overflow-hidden mb-6">
         <div className="bg-gray-100 px-5 py-3">
           <h3 className="font-bold">📍 Distances &amp; Drive Times</h3>

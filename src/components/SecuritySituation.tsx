@@ -1,9 +1,12 @@
 export default function SecuritySituation() {
   return (
-    <section id="security" className="py-10 border-b border-gray-200">
-      <h2 className="text-3xl font-bold mb-6">Security Situation</h2>
-
-      {/* March 2026 escalation */}
+    <section id="security" className="section-card">
+      <div className="flex items-center gap-3 mb-2">
+        <div className="w-1 h-8 rounded-full bg-red-500" />
+        <span className="text-2xl">🛡️</span>
+        <h2 className="text-2xl font-bold text-slate-900">Security Situation</h2>
+      </div>
+      <p className="text-slate-500 text-sm mb-6 pl-10">Current threat landscape as of 10 March 2026.</p>{/* March 2026 escalation */}
       <div className="mb-8">
         <h3 className="text-xl font-semibold mb-4 text-red-700">🚨 March 2026 Escalation (Active Conflict)</h3>
         <div className="border-l-4 border-red-500 space-y-0">
